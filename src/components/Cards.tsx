@@ -27,7 +27,6 @@ const Cards: React.FC<CardsProps> = ({ filters }) => {
   const [products, setProducts] = useState<Product[]>([]);
   const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
 
-  // Fetch products only once when component mounts
   useEffect(() => {
     const fetchProducts = async () => {
       try {
@@ -43,7 +42,6 @@ const Cards: React.FC<CardsProps> = ({ filters }) => {
     fetchProducts();
   }, []);
 
-  // Apply filters to products
   useEffect(() => {
     let filtered = [...products];
 

@@ -189,7 +189,7 @@ const Products: React.FC = () => {
       <div className="max-w-[1200px] mx-auto mb-32">
         <div className="flex flex-wrap ml-8 gap-10">
           {filteredProducts.map(product => (
-            <div onClick={() => handleClickCard(product.id)} key={product.id} className="card cursor-pointer p-4 w-[352px] bg-base-100 rounded-xl shadow-xl">
+            <div className="card cursor-pointer p-4 w-[352px] bg-base-100 rounded-xl shadow-xl">
               <figure>
                 <img src={product.attributes.image} alt={product.attributes.title} className="w-full rounded-xl h-48 object-cover"/>
               </figure>
